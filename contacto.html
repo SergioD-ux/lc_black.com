@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Las 3 metaetiquetas anteriores * deben * ser lo primero en la cabeza; cualquier otro contenido principal debe venir * después * de estas etiquetas -->
+  <title>Leyva Consultores E.I.R.L.</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/leyvaconsultores.ico">
+ 
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/fontello.css">
+ 
+</head>
+
+<body class="contacto-page" style="overflow: visible;">
+
+  <header class="menu" id="header">
+     <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="rmenu-toggle" id="rmenuToggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-brand">
+            <a href="index.html"><img src="./img/lc.svg"></a>
+          </div>
+        </div>
+        <div class="rmenu-overlay" id="rmenuOverlay"></div>
+        <div class="rmenu-drawer" id="rmenuDrawer">
+          <ul class="nav-tabs">
+            <li><a href="about.html">Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="team.html">Equipo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Senku.html">Conocer Senku</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs">
+              <li role="presentation"><a class="nav-item nav-link" href="about.html">Nosotros</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="services.html">Servicios</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="team.html">Equipo</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="contacto.html">Contacto</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="Senku.html">Conocer Senku</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/header-->
+
+  
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero-copy">
+          <span class="contact-eyebrow">Hablemos</span>
+          <h1>Contáctanos</h1>
+          <p>Queremos resolver cualquier duda o inquietud que tengas sobre los servicios que brindamos. Escríbenos y te responderemos en el menor tiempo posible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-form-card">
+            <form class="contact-form" action="" method="post" id="contactForm">
+              <div class="contact-form-row">
+                <div class="contact-field">
+                  <label for="name">Nombre</label>
+                  <input class="contact-input" name="name" pattern="[A-Za-z ]{1,30}"
+                    title="No se permiten números ni caracteres especiales" maxlength="30" id="name" type="text"
+                    placeholder="Tu nombre" required />
+                </div>
+                <div class="contact-field">
+                  <label for="subject">Asunto</label>
+                  <input class="contact-input" name="subject" pattern="[A-Za-z0-9 ]{5,40}"
+                    title="No se permiten caracteres especiales" id="subject" type="text"
+                    placeholder="¿En qué te ayudamos?" required />
+                </div>
+              </div>
+
+              <div class="contact-field">
+                <label for="email">Correo electrónico</label>
+                <input class="contact-input" type="email" name="email" id="email"
+                  placeholder="tu@correo.com" required />
+              </div>
+
+              <div class="contact-field">
+                <label for="message">Mensaje</label>
+                <textarea class="contact-input contact-textarea" name="message" id="message" cols="30" rows="9" maxlength="600"
+                  placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+              </div>
+
+              <div style="text-align: center;">
+                <button id="submit-btn" type="submit" class="contact-submit">Enviar mensaje</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-info-panel">
+            <h2>Otras formas de contactarnos</h2>
+            <a class="contact-info-item" href="https://www.google.com/maps?q=Jir%C3%B3n+Apur%C3%ADmac+292,+Cercado+de+Lima" target="_blank" rel="noopener">
+              <span class="contact-info-icon"><i class="fa fa-map-marker"></i></span>
+              <span class="contact-info-text">
+                <strong>Oficina</strong>
+                <span>Lima, Perú</span>
+              </span>
+            </a>
+            <a class="contact-info-item" href="tel:+51969200366">
+              <span class="contact-info-icon"><i class="fa fa-phone"></i></span>
+              <span class="contact-info-text">
+                <strong>Teléfono</strong>
+                <span>+51 969 200 366</span>
+              </span>
+            </a>
+            <a class="contact-info-item" href="mailto:comercial@lc.com.pe">
+              <span class="contact-info-icon"><i class="fa fa-envelope"></i></span>
+              <span class="contact-info-text">
+                <strong>Correo</strong>
+                <span>comercial@lc.com.pe</span>
+              </span>
+            </a>
+            <a class="contact-info-item" href="https://api.whatsapp.com/send?phone=51969200366" target="_blank" rel="noopener">
+              <span class="contact-info-icon"><i class="icon-whatsapp"></i></span>
+              <span class="contact-info-text">
+                <strong>WhatsApp</strong>
+                <span>Escríbenos directo</span>
+              </span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-map-section">
+      <div class="container">
+        <div class="contact-map-card">
+          <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.469899965626!2d-77.03318067084643!3d-12.051804187920474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b7f771e52b%3A0xc0c300a6d86cab8c!2sJir%C3%B3n%20Apur%C3%ADmac%20292%2C%20Cercado%20de%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1648680232535!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de confirmacion de envio -->
+  <div class="modal fade contact-modal" id="modalForm" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-body">
+          <span class="contact-modal-icon"><i class="fa fa-comments"></i></span>
+          <p id="msgModalForm"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <footer>
+    <div class="container">
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h4>Sobre Nosotros</h4>
+        <p>Nuestra organización reune a destacados profesionales con el propósito común de incentivar, desarrollar y contribuir con la creatividad en las organizaciones, liberando su enorme potencial transformador.</p>
+        <div class="social-icon">
+        <div class="col-md-12">
+          <a href="index.html"><img class="img-footer" src="./img/lc-png.svg"></a>
+        </div>
+        </div>
+      </div>
+      <div class="copyright">
+      <script type="text/javascript">document.write(new Date().getFullYear());</script>
+      &copy; Copyright Leyva Consultores E.I.R.L. - Todos Los Derechos Reservados.
+      </div>
+    </div>
+  </div>
+  </footer>
+  <button id="scroll-top-btn" class="scroll-top-btn  desaparecer-btn"></button>
+ 
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/funciones.js"></script>
+  
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- script del boton top -->
+  <script src="js/boton_top.js"></script>
+
+  <!-- Btn de wsp -->
+  <a href="https://api.whatsapp.com/send?phone=51969200366"
+  class="btn-wsp" target="_blank">
+  <i class="icon-whatsapp"></i></a>
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" type="image/x-icon" href="./img/Senku/footer_senku.png">
+<title>Senku — Software & Tecnología</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/Senku.css">
+</head>
+<body>
+<nav class="senku-nav">
+  <div class="nav-logo">
+    <a href="index.html" style="display:flex;align-items:center;gap:0;text-decoration:none;color:inherit;">
+      <img src="img/Senku/senkulogo.png" alt="Senku" class="nav-brand-logo" style="height:4rem; width:auto; display:block;" />
+    </a>
+  </div>
+  
+  <button class="rmenu-toggle" id="rmenuToggle" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <!-- Overlay for Drawer -->
+  <div class="rmenu-overlay" id="rmenuOverlay"></div>
+  
+  <!-- Responsive Drawer Menu -->
+  <div class="rmenu-drawer" id="rmenuDrawer">
+    <ul class="nav-links-drawer">
+      <li><a href="index.html">Leyva Consultores</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#alianza">Alianza</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Leyva Consultores</a></li>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#alianza">Alianza</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+<section class="hero carousel-hero" id="inicio">
+  <div class="carousel" id="heroCarousel">
+    <div class="carousel-track">
+      <div class="carousel-slide" data-title="Sistemas que hacen crecer tu empresa" data-desc="Desarrollamos soluciones tecnológicas a medida para organizaciones que buscan eficiencia, control y crecimiento sostenible.">
+        <img src="img/Senku/Home(Senku).jpg" alt="Home image 1">
+        <div class="carousel-caption">
+          <h2 class="hero-eyebrow">Software · Tecnología · Innovación</h2>
+          <h1 class="hero-title">Sistemas que hacen crecer<span> tu empresa</span></h1>
+          <p class="hero-sub">Desarrollamos soluciones tecnológicas a medida para organizaciones que buscan eficiencia, control y crecimiento sostenible.</p>
+          <div class="hero-actions"><a href="#servicios" class="btn btn-primary">Ver servicios</a><a href="#contacto" class="btn btn-secondary">Contáctanos</a></div>
+        </div>
+      </div>
+      <div class="carousel-slide" data-title="Soluciones escalables" data-desc="Automatización, gestión documental y BI para transformar tus procesos.">
+        <img src="img/Senku/Home1(Senku).jpg" alt="Home image 2">
+        <div class="carousel-caption">
+          <h2 class="hero-eyebrow">Soluciones · Escalables</h2>
+          <h1 class="hero-title">Plataformas que simplifican procesos</h1>
+          <p class="hero-sub">Automatización y datos para mejorar la toma de decisiones en tu organización.</p>
+        </div>
+      </div>
+      <div class="carousel-slide" data-title="Gestión inteligente" data-desc="Centraliza la información de tu empresa en una sola plataforma conectada.">
+        <img src="img/Senku/senku1.png" alt="Senku gestión inteligente">
+        <div class="carousel-caption">
+          <h2 class="hero-eyebrow">Gestión · Inteligente</h2>
+          <h1 class="hero-title">Toda tu empresa, <span>conectada</span></h1>
+          <p class="hero-sub">Centraliza la información de tu empresa en una sola plataforma conectada.</p>
+        </div>
+      </div>
+      <div class="carousel-slide" data-title="Procesos digitales y seguros" data-desc="Automatiza tareas y protege la información de tu organización.">
+        <img src="img/Senku/senku2.png" alt="Senku procesos digitales y seguridad">
+        <div class="carousel-caption">
+          <h2 class="hero-eyebrow">Seguridad · Automatización</h2>
+          <h1 class="hero-title">Procesos digitales <span>y seguros</span></h1>
+          <p class="hero-sub">Automatiza tareas y protege la información de tu organización.</p>
+        </div>
+      </div>
+      <div class="carousel-slide" data-title="Tecnología con Inteligencia Artificial" data-desc="Senku potencia tu gestión con soluciones impulsadas por IA.">
+        <img src="img/Senku/senku4.jpg" alt="Senku inteligencia artificial">
+        <div class="carousel-caption">
+          <h2 class="hero-eyebrow">Innovación · IA</h2>
+          <h1 class="hero-title">Tecnología con <span>Inteligencia Artificial</span></h1>
+          <p class="hero-sub">Senku potencia tu gestión con soluciones impulsadas por IA.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+<section class="section" id="servicios">
+  <p class="hero-eyebrow">Lo que hacemos</p>
+  <h2 class="section-title">Nuestros servicios</h2>
+  <p class="section-desc">Soluciones digitales diseñadas para integrarse perfectamente con los procesos de tu organización.</p>
+  <div class="feature-grid">
+    <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8l-4 3V5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Sistemas a medida</h4><p>Software personalizado según los procesos únicos de tu empresa. Desde cero, pensado para ti.</p></div>
+    <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M6 16a4 4 0 0 1 0-8 5.5 5.5 0 0 1 10.9 1.5A3.5 3.5 0 0 1 17 15H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Soluciones en la nube</h4><p>Plataformas accesibles desde cualquier dispositivo. Seguras, escalables y sin servidores físicos.</p></div>
+    <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 19h16M8 15V9m8 10V11m-4 8V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h4>Business Intelligence</h4><p>Dashboards en tiempo real para tomar decisiones estratégicas basadas en datos concretos.</p></div>
+    <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M5 12h4l2-2 3 6 3-4h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Automatización</h4><p>Reduce tareas repetitivas con flujos automáticos de aprobación, alertas y generación de reportes.</p></div>
+    <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7l4-4h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Gestión Documental</h4><p>Control digital de documentos, versiones, permisos y trazabilidad para sistemas ISO y auditorías.</p></div>
+    <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2l6 3v5c0 5.3-3.6 10-6 12-2.4-2-6-6.7-6-12V5l6-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 16h.01" fill="currentColor"/></svg></div><h4>Soporte & Mantenimiento</h4><p>Acompañamiento continuo, actualizaciones y soporte técnico para mantener tus sistemas al día.</p></div>
+  </div>
+</section>
+<section class="section" id="alianza">
+  <p class="hero-eyebrow">Trabajo en conjunto</p>
+  <h2 class="section-title">Nuestra alianza estratégica</h2>
+  <p class="section-desc">Senku y Leyva Consultores trabajan de la mano para llevar la gestión de tu empresa al siguiente nivel.</p>
+  <div class="partner-panel">
+    <div class="partner-box"><h3>Leyva Consultores</h3><p>Consultoría en sistemas de gestión, implementación y mejora continua para normativas ISO.</p></div>
+    <div class="partner-box"><h3>Senku</h3><p>Software y tecnología a medida para digitalizar procesos, automatizar y potenciar el control.</p><div class="partner-tag">Aliado estratégico</div></div>
+  </div>
+</section>
+<section class="section" id="equipo" style="padding-top: 2rem;">
+  <p class="hero-eyebrow">Las personas detrás</p>
+  <h2 class="section-title">Nuestro equipo</h2>
+  <p class="section-desc">Profesionales apasionados por la tecnología y comprometidos con el crecimiento de sus clientes.</p>
+  <div class="team-carousel">
+    <div class="team-grid">
+     <div class="team-card">
+      <div class="team-photo"><div class="team-photo-placeholder"><img src="img/equipo/rudy.jpg" alt="Rudy Leyva" class="team-photo-img"></div></div>
+      <div class="team-info"><div class="team-name">Rudy Leyva</div>
+      <div class="team-role">Gerente General</div></div>
+      <div class="team-button"><a href="#" class="btn btn-secondary js-open-profile" data-profile="rudy">Ver más</a></div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><div class="team-photo-placeholder"><img src="img/Senku/Hiro_TIC.png" alt="Hiroshi Hernández" class="team-photo-img"></div></div>
+      <div class="team-info"><div class="team-name">Hiroshi Hernández Vicente</div><div class="team-role">Ingeniero de Software e Inteligencia Artificial</div></div>
+      <div class="team-button"><a href="#" class="btn btn-secondary js-open-profile" data-profile="hiroshi">Ver más</a></div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><div class="team-photo-placeholder"><img src="img/Senku/Katherin(TIC).jpeg" alt="Katherin Julissa Leyva Calero" class="team-photo-img"></div></div>
+      <div class="team-info"><div class="team-name">Katherin Julissa Leyva Calero</div>
+      <div class="team-role">Diseño Desarrollo de Software </div></div>
+      <div class="team-button"><a href="#" class="btn btn-secondary js-open-profile" data-profile="katherin">Ver más</a></div>
+    </div>
+     <div class="team-card">
+      <div class="team-photo"><div class="team-photo-placeholder"><img src="img/equipo/sergio.jpg" alt="Sergio Diaz" class="team-photo-img"></div></div>
+      <div class="team-info"><div class="team-name">Sergio Diaz</div>
+      <div class="team-role">Consultor Asociado</div></div>
+      <div class="team-button"><a href="#" class="btn btn-secondary js-open-profile" data-profile="sergio">Ver más</a></div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><div class="team-photo-placeholder"><img src="img/Senku/Andrea_Senku_.png" alt="Andrea Leyva Javier" class="team-photo-img"></div></div>
+      <div class="team-info"><div class="team-name">Andrea Leyva Javier</div>
+      <div class="team-role">Coordinadora de Ventas</div></div>
+      <div class="team-button"><a href="#" class="btn btn-secondary js-open-profile" data-profile="andrea">Ver más</a></div>
+    </div>
+    </div>
+    <button class="team-carousel-btn carousel-prev" type="button" aria-label="Anterior">‹</button>
+    <button class="team-carousel-btn carousel-next" type="button" aria-label="Siguiente">›</button>
+  </div>
+</section>
+
+<section class="section map-section" id="ubicacion">
+  <h2 class="section-title">Nuestra ubicación</h2>
+  <p class="section-desc">Encuéntranos en Trujillo, Perú. Visítanos o contáctanos para agendar una reunión.</p>
+  <div class="map-wrap">
+      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.469899965626!2d-77.03318067084643!3d-12.051804187920474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b7f771e52b%3A0xc0c300a6d86cab8c!2sJir%C3%B3n%20Apur%C3%ADmac%20292%2C%20Cercado%20de%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1648680232535!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div style="text-align:center;margin-top:0.85rem;"><a href="https://www.google.com/maps?q=-8.111662412517598,-79.0286027025727" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Abrir en Google Maps</a></div>
+  </div>
+</section>
+
+<section class="section faq-section" id="preguntas">
+  <h2 class="section-title">¿Tienes alguna consulta?</h2>
+  <p class="section-desc">Aquí respondemos las dudas más comunes sobre nuestros servicios y el proceso de trabajo.</p>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <h3>¿Cómo funciona la implementación de un sistema a medida?</h3>
+      <p>Comenzamos por entender tus procesos, luego diseñamos una solución a medida y finalmente realizamos pruebas, capacitación y seguimiento para un lanzamiento exitoso.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Puedo integrar el software con sistemas ya existentes?</h3>
+      <p>Sí, diseñamos integraciones seguras y eficientes con tus sistemas actuales, como ERP, CRM o plataformas de gestión documental.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Ofrecen soporte después de la entrega?</h3>
+      <p>Claro. Nuestro servicio incluye soporte técnico continuo, actualizaciones y mantenimiento para que tus sistemas estén siempre operativos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contacto" style="padding-bottom: 4rem;">
+  <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+    <p class="hero-eyebrow">Hablemos</p>
+    <h2 class="section-title">¿Listo para digitalizar tu empresa?</h2>
+    <p class="section-desc">Cuéntanos tu desafío. Te ayudamos a encontrar la solución tecnológica ideal para tu organización.</p>
+    <div class="contact-grid">
+      <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg><span class="contact-label">Teléfono</span><span class="contact-value">+51 935 140 218</span></div>
+      <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="contact-label">Email</span><span class="contact-value">aleyvajav@outlook.com</span></div>
+      <div class="contact-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="contact-label">Ubicación</span><span class="contact-value">Lima, Perú</span></div>
+    </div>
+    <a href="mailto:contacto@senku.pe" class="btn btn-primary">Enviar mensaje</a>
+  </div>
+</section>
+<footer>
+  <div class="footer-brand"><div class="footer-icon"><img src="img/Senku/footer_senku.png" alt="Senku" style="height:2.5rem; width:auto; display:block; border-radius:50%;"></div>Senku</div>
+  <div class="footer-copy">© 2025 Senku. Todos los derechos reservados.</div>
+  <div class="footer-partner">Aliado de <span>Leyva Consultores</span></div>
+</footer>
+<script>
+  (function(){
+    const track = document.querySelector('#heroCarousel .carousel-track');
+    const slides = Array.from(track.children);
+    const dotsWrap = document.getElementById('carouselDots');
+    let index = 0;
+    // create dots
+    slides.forEach((s,i)=>{
+      const b = document.createElement('button');
+      b.addEventListener('click', ()=> moveTo(i));
+      if(i===0) b.classList.add('active');
+      dotsWrap.appendChild(b);
+    });
+    const dots = Array.from(dotsWrap.children);
+    function update(){
+      track.style.transform = `translateX(-${index*100}%)`;
+      dots.forEach((d,idx)=> d.classList.toggle('active', idx===index));
+      // show hero-actions only on first slide
+      slides.forEach((s,idx)=>{
+        const cap = s.querySelector('.carousel-caption');
+        if(!cap) return;
+        if(idx===0 && index===0) cap.classList.add('show-actions'); else cap.classList.remove('show-actions');
+      });
+    }
+    function moveTo(i){ index = i; update(); }
+    // autoplay
+    let timer = setInterval(()=>{ index = (index+1) % slides.length; update(); }, 5000);
+    // pause on hover
+    const carousel = document.getElementById('heroCarousel');
+    carousel.addEventListener('mouseenter', ()=> clearInterval(timer));
+    carousel.addEventListener('mouseleave', ()=> { timer = setInterval(()=>{ index = (index+1) % slides.length; update(); }, 5000); });
+    // initial
+    update();
+  })();
+  // ajustar altura del hero para ocupar todo el viewport menos la nav
+  (function(){
+    const carouselContainer = document.querySelector('.carousel-hero .carousel');
+    const slidesImgs = () => Array.from(document.querySelectorAll('.carousel-hero .carousel-slide img'));
+    const navEl = document.querySelector('nav');
+    function setHeroHeight(){
+      if(!carouselContainer || !navEl) return;
+      const h = window.innerHeight - navEl.getBoundingClientRect().height;
+      carouselContainer.style.height = h + 'px';
+      slidesImgs().forEach(img => { img.style.height = h + 'px'; });
+    }
+    window.addEventListener('resize', setHeroHeight);
+    // run after images load to avoid flashes
+    window.addEventListener('load', setHeroHeight);
+    setHeroHeight();
+  })();
+</script>
+
+  <!-- Modal de perfil -->
+  <div id="profileModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+      <button class="modal-close" aria-label="Cerrar">×</button>
+      <div class="modal-body">
+        <h3 id="profileModalTitle">Perfil</h3>
+        <p class="modal-role"></p>
+        <div class="modal-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const profileData = {
+        hiroshi: {
+              name: 'Hiroshi Hernández Vicente',
+              role: 'Ingeniería de Software e Inteligencia Artificial',
+              description: 'Especialista en ingeniería de software e inteligencia artificial, enfocado en la creación de soluciones digitales que impulsan la innovación, la automatización y la transformación tecnológica de las organizaciones.',
+              extra: 'Su experiencia abarca el desarrollo de sistemas empresariales, análisis de datos y aplicación de tecnologías emergentes para mejorar la competitividad y la toma de decisiones estratégicas.'
+          },
+        katherin: {
+          name: 'Katherin  Leyva Calero',
+          role: 'Diseño Desarrollo de Software',
+          description: 'Especializada en el desarrollo de aplicaciones web, aplicaciones móviles, sistemas empresariales, bases de datos y soluciones de comercio electrónico utilizando tecnologías modernas.',
+          extra: 'Experiencia en la creación de plataformas de gestión, sistemas de inventario, portales corporativos, aplicaciones móviles multiplataforma y asistentes virtuales basados en inteligencia artificial. Participa en el desarrollo de soluciones innovadoras enfocadas en la automatización de procesos, optimización de recursos y mejora de la experiencia de los usuarios mediante software eficiente, seguro y escalable. Comprometida con la innovación, la calidad tecnológica y el desarrollo de soluciones digitales que contribuyan al crecimiento y competitividad de las empresas.'
+        },
+        andrea: {
+            name: 'Andrea Leyva',
+            role: 'Coordinadora de Ventas ',
+            description: 'Especialista en comunicación corporativa, publicidad y marketing digital. Desarrolla estrategias de posicionamiento de marca, gestión de redes sociales, campañas publicitarias y creación de contenido digital orientado a generar impacto y fortalecer la relación entre las organizaciones y sus audiencias.',
+            extra: 'Enfocada en la creatividad, la innovación y la construcción de marcas con identidad y valor.'
+        },
+        rudy: {
+            name: 'Rudy Leyva',
+            role: 'Gerente General',
+            description: 'Líder estratégico que integra consultoría y tecnología para impulsar soluciones empresariales eficientes y alineadas a la mejora continua.',
+            extra: 'Cuenta con experiencia en la gestión de sistemas integrados y en la coordinación de proyectos que buscan asegurar el cumplimiento normativo y la mejora operativa en diversos sectores.'
+        },
+        sergio: {
+            name: 'Sergio Diaz',
+            role: 'Consultor Asociado',
+            description: 'Consultor especializado en implementación de sistemas integrados de gestión, enfocado en mejorar la productividad y el cumplimiento normativo.',
+            extra: 'Ha trabajado con empresas de múltiples rubros para optimizar procesos y soportar el desarrollo de sistemas eficientes y seguros.'
+        },
+        erick: {
+            name: 'Erick Diaz',
+            role: 'Consultor Asociado',
+            description: 'Auditor y consultor en sistemas de gestión con experiencia en certificaciones ISO y procesos de mejora continua.',
+            extra: 'Especializado en apoyar a empresas en la implementación de estándares de calidad, seguridad y gestión ambiental, con un enfoque en resultados prácticos y sostenibles.'
+        }
+      };
+
+      const openBtns = document.querySelectorAll('.js-open-profile');
+      const modal = document.getElementById('profileModal');
+      const closeBtn = modal && modal.querySelector('.modal-close');
+      const title = modal && modal.querySelector('#profileModalTitle');
+      const role = modal && modal.querySelector('.modal-role');
+      const content = modal && modal.querySelector('.modal-content');
+
+      function setModal(profile){
+        if(!profile || !title || !role || !content) return;
+        title.textContent = profile.name;
+        role.textContent = profile.role;
+        content.innerHTML = `<p>${profile.description}</p><p>${profile.extra}</p>`;
+      }
+      function openModal(profileKey){
+        if(!modal) return;
+        setModal(profileData[profileKey] || profileData.andres);
+        modal.setAttribute('aria-hidden','false');
+        modal.classList.add('open');
+        document.body.style.overflow='hidden';
+      }
+      function closeModal(){ if(!modal) return; modal.setAttribute('aria-hidden','true'); modal.classList.remove('open'); document.body.style.overflow=''; }
+      openBtns.forEach(b=> b.addEventListener('click', e=>{ e.preventDefault(); openModal(b.dataset.profile); }));
+      if(closeBtn) closeBtn.addEventListener('click', closeModal);
+      if(modal) modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
+      document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+    })();
+  </script>
+
+  <script>
+    (function() {
+      function initTeamCarousel() {
+        const carousel = document.querySelector('#equipo .team-carousel');
+        const track = carousel ? carousel.querySelector('.team-grid') : null;
+        const prevBtn = carousel ? carousel.querySelector('.carousel-prev') : null;
+        const nextBtn = carousel ? carousel.querySelector('.carousel-next') : null;
+        const scrollStep = () => (track ? Math.max(track.clientWidth * 0.6, 320) : 0);
+        let autoplayTimer;
+
+        if (!track) return;
+
+        function scrollToNext() {
+          const maxScroll = track.scrollWidth - track.clientWidth;
+          const nextPosition = track.scrollLeft + scrollStep();
+          if (nextPosition >= maxScroll - 1) {
+            track.scrollTo({ left: maxScroll, behavior: 'smooth' });
+            setTimeout(() => {
+              track.scrollTo({ left: 0, behavior: 'smooth' });
+            }, 800);
+          } else {
+            track.scrollTo({ left: nextPosition, behavior: 'smooth' });
+          }
+        }
+
+        function startAutoplay() {
+          stopAutoplay();
+          autoplayTimer = window.setInterval(scrollToNext, 4200);
+        }
+
+        function stopAutoplay() {
+          if (autoplayTimer) {
+            window.clearInterval(autoplayTimer);
+            autoplayTimer = null;
+          }
+        }
+
+        function scrollToPrev() {
+          const prevPosition = Math.max(track.scrollLeft - scrollStep(), 0);
+          track.scrollTo({ left: prevPosition, behavior: 'smooth' });
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', () => { stopAutoplay(); scrollToPrev(); startAutoplay(); });
+        if (nextBtn) nextBtn.addEventListener('click', () => { stopAutoplay(); scrollToNext(); startAutoplay(); });
+
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+
+        startAutoplay();
+      }
+
+      if (document.readyState === 'loading') {
+        window.addEventListener('DOMContentLoaded', initTeamCarousel);
+      } else {
+        initTeamCarousel();
+      }
+    })();
+  </script>
+
+  <!-- Responsive Drawer Menu Script for Senku -->
+  <script>
+    (function() {
+      const rmenuToggle = document.getElementById('rmenuToggle');
+      const rmenuDrawer = document.getElementById('rmenuDrawer');
+      const rmenuOverlay = document.getElementById('rmenuOverlay');
+      const menuLinks = rmenuDrawer ? rmenuDrawer.querySelectorAll('.nav-links-drawer a') : [];
+
+      // Abrir/cerrar drawer al hacer clic en hamburguesa
+      if (rmenuToggle) {
+        rmenuToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          rmenuToggle.classList.toggle('active');
+          rmenuDrawer.classList.toggle('active');
+          rmenuOverlay.classList.toggle('active');
+        });
+      }
+
+      // Cerrar drawer al hacer clic en overlay
+      if (rmenuOverlay) {
+        rmenuOverlay.addEventListener('click', function() {
+          rmenuToggle.classList.remove('active');
+          rmenuDrawer.classList.remove('active');
+          rmenuOverlay.classList.remove('active');
+        });
+      }
+
+      // Cerrar drawer al hacer clic en un enlace del menú
+      menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          rmenuToggle.classList.remove('active');
+          rmenuDrawer.classList.remove('active');
+          rmenuOverlay.classList.remove('active');
+        });
+      });
+
+      // Cerrar drawer si se redimensiona la ventana a desktop
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 1024) {
+          rmenuToggle.classList.remove('active');
+          rmenuDrawer.classList.remove('active');
+          rmenuOverlay.classList.remove('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

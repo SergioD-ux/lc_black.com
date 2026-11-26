@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Las 3 metaetiquetas anteriores * deben * ser lo primero en la cabeza; cualquier otro contenido principal debe venir * después * de estas etiquetas -->
+  <title>Leyva Consultores E.I.R.L.</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/leyvaconsultores.ico">
+ 
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/fontello.css">
+ 
+</head>
+
+<body style="overflow: visible;">
+
+    <header class="menu" id="header">
+     <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="rmenu-toggle" id="rmenuToggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-brand">
+            <a href="../index.html"><img src="../img/lc.svg"></a>
+          </div>
+        </div>
+        <div class="rmenu-overlay" id="rmenuOverlay"></div>
+        <div class="rmenu-drawer" id="rmenuDrawer">
+          <ul class="nav-tabs">
+            <li><a href="../about.html">Nosotros</a></li>
+            <li><a href="../services.html">Servicios</a></li>
+            <li><a href="../team.html">Equipo</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="../Senku.html">Conocer Senku</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs">
+              <li role="presentation"><a class="nav-item nav-link" href="../about.html">Nosotros</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="../services.html">Servicios</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="../team.html">Equipo</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="../contacto.html">Contacto</a></li>
+              <li role="presentation"><a class="nav-item nav-link" href="../Senku.html">Conocer Senku</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--/header-->
+
+  
+  <div class="contacto" id="contacto">
+      <div class="container">
+        <div class="row d-flex justify-content-center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" >
+          <div class="col-lg-8">
+            <div class="section-tittle text-center mb-80">
+              <h2>Contáctanos​</h2>
+              <p>Queremos resolver cualquier duda o inquietud que tengas sobre los servicios que brindamos. Escríbenos y te responderemos en el menor tiempo posible.</p>
+            </div>
+            <br>
+          </div>
+        </div>
+        <section class="contact-section wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 ">
+                <form class="form-contact contact_form" action="" method="post" id="contactForm">
+                  <div class="row form-imputs">
+                    <div class="imp-name">
+                      <div class="form-group">
+                        <input class="form-control valid" name="name" pattern="[a-zA-Z ]{1,30}"
+                          title="No se permiten números ni caracteres especiales" maxlength="30" id="name" type="text"
+                          onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;&#39;"
+                          onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;Enter your names&#39;"
+                          placeholder="Nombre" required />   
+                      </div>
+                    </div>
+                    <div class="imp-asunto">
+
+                      <div class="form-group">
+                        <input class="form-control" name="subject" pattern="[A-Za-z0-9 ]{5,40}"
+                          title="No se permiten caracteres especiales" id="subject" type="text"
+                          onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;&#39;"
+                          onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;Enter Subject&#39;"
+                          placeholder="Asunto" required />
+                      </div>
+                    </div>
+
+                    <div class="imp-email">
+                      <div class="form-group">
+                        <input class="form-control valid" type="email" name="email" id="email"
+                          onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;&#39;"
+                          onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;Enter email address&#39;"
+                          placeholder="Correo electrónico" required />
+                      </div>
+                    </div>
+                    <div class="imp-message">
+                      <div class="form-group">
+                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                          maxlength="600"
+                          onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;&#39;"
+                          onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = &#39;Enter Message&#39;"
+                          placeholder=" Mensaje" required></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3 imp-submit">
+                      <button id="submit-btn" type="submit" class="btn-contact">Enviar</button>
+                    </div>
+
+                  </div>
+
+                </form>
+              </div>
+              <div class="col-lg-3  offset-lg-1 contact-info-responsive">
+                <div class="media contact-info map">
+                  <!--<span class="contact-info__icon"><i class="ti-home"></i></span>-->
+                  <img class="contact-icon" src="img/map.ico" alt="">
+                  <div class="media-body">
+                    <h3>Lima, Perú</h3>
+                  </div>
+                </div>
+                <div class="media contact-info phone">
+                  <!--<span class="contact-info__icon"><i class="ti-tablet"></i></span>-->
+                  <img class="contact-icon" src="img/phone.ico" alt="">
+                  <div class="media-body">
+                    <h3>+51 969 200 366</h3>
+                  </div>
+                </div>
+                <div class="media contact-info email">
+                  <!--<span class="contact-info__icon"><i class="ti-email"></i></span>-->
+                  <img class="contact-icon" src="img/email.ico" alt="">
+                  <div class="media-body">
+                    <h3>comercial@lc.com.pe</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.469899965626!2d-77.03318067084643!3d-12.051804187920474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b7f771e52b%3A0xc0c300a6d86cab8c!2sJir%C3%B3n%20Apur%C3%ADmac%20292%2C%20Cercado%20de%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1648680232535!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ <footer>
+    <div class="container">
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h4>Sobre Nosotros</h4>
+        <p>Nuestra organización reune a destacados profesionales con el propósito común de incentivar, desarrollar y contribuir con la creatividad en las organizaciones, liberando su enorme potencial transformador.</p>
+        <div class="social-icon">
+        <div class="col-md-12">
+          <a href="index.html"><img class="img-footer" src="./img/lc-png.svg"></a>
+        </div>
+        </div>
+      </div>
+      <div class="copyright">
+      <script type="text/javascript">document.write(new Date().getFullYear());</script>
+      &copy; Copyright Leyva Consultores E.I.R.L. - Todos Los Derechos Reservados.
+      </div>
+    </div>
+  </div>
+  </footer>
+  <button id="scroll-top-btn" class="scroll-top-btn  desaparecer-btn"></button>
+ 
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/funciones.js"></script>
+  
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script src="../js/main.js"></script>
+
+  <!-- script del boton top -->
+  <script src="js/boton_top.js"></script>
+
+  <!-- Btn de wsp -->
+  <a href="https://api.whatsapp.com/send?phone=969200366"
+  class="btn-wsp" target="_blank">
+  <i class="icon-whatsapp"></i></a>
+
+</body>
+
+</html>
